@@ -1,0 +1,216 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Light background */
+    color: #fff; /* Dark text */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    margin: 10px 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #007bff; /* Primary color */
+    color: white;
+}
+
+header h2 {
+    margin-right: auto; /* Pushes the header title to the left */
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Aligns the menu to the right */
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ffc107; /* Hover effect color */
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(to right, #007bff, #00bfff); /* Gradient background */
+    color: white;
+}
+
+.left {
+    width: 50%;
+    padding: 20px;
+}
+
+.right {
+    width: 50%;
+}
+
+.right img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.left span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.left h3 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.left .des {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ffc107; /* Accent color for description */
+}
+
+.left button {
+    padding: 12px 24px;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.left button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.left button:hover {
+    background-color: #ffeb3b;
+}
+
+/* Background title */
+.bgtitle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1); /* Faint background title */
+    z-index: -1;
+}
+
+/* Circular Background Elements */
+.circle1, .circle2, .circle3 {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.circle1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 20%;
+}
+
+.circle2 {
+    width: 200px;
+    height: 200px;
+    top: 30%;
+    right: 15%;
+}
+
+.circle3 {
+    width: 150px;
+    height: 150px;
+    bottom: 10%;
+    left: 35%;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    width: 80%; /* Adjust width for skill bars */
+    margin: 10px 0;
+}
+
+.bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.activebar {
+    height: 10px;
+    background: #007bff; /* Primary color for active bar */
+}
+
+/* Contact Section */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in cards */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #181818; /* Dark background */
+    color: #f4f4f4; /* Light text color */
+}
+
+header {
+    background: #222; /* Darker header background */
+}
+
+header ul li a {
+    color: #fff; /* Maintain link color in dark mode */
+}
+
+.card {
+    background: #333;
+    color: #f4f4f4;
+}
